@@ -21,9 +21,7 @@ def roll_distro(max, numOfDice=4):
 	#count what's rolled
 	for each in rolls:
 		currentCount = distribution.get(each, 0)
-		print("Current count of", currentCount)
-		currentCount += 1
-		distribution[each] = currentCount
+		distribution[each] = currentCount + 1
 
 	output = ""
 	for roll in distribution:
