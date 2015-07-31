@@ -21,10 +21,20 @@ def fact_search(seek):
 
 		return facts
 
-def save_primes(primeNumbers ,pathName = "factorial.txt"):
+def save_primes(primeNumbers, originalNumber, pathName = "factorial.txt"):
+		distinct = set(primeNumbers)
+		outString = []
+		for num in distinct:
+			counting = primeNumbers.count(num)
+			if counting == 1:
+				outString.append(str(num))
+			else:
+				outString.append(str(num) + "^" + str(counting))
+		output = str(originalNumber) + " = " + " * ".join(outString)
+
+
 		with open(pathName,'w') as f:
-			for number in primeNumbers:
-				f.write(str(number) + "\n")
+			f.write(output)
 def main():
 		argue = len(argv)
 
@@ -33,10 +43,10 @@ def main():
 			quit()
 		elif argue == 2:
 			primeFound = fact_search(int(argv[1]))
-			save_primes(primeFound)
+			save_primes(primeFound, argv[1])
 		elif argue == 3:
 			primeFound = fact_search(int(argv[1]))
-			save_primes(primeFound, argv[3])
+			save_primes(primeFound, argv[1], argv[2])
 
 if __name__ == '__main__':
 	main()
