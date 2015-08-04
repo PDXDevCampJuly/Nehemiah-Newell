@@ -20,4 +20,4 @@ class Person(object):
 
 	def banking(self):
 		for inx, investments in enumerate(self.accounts):
-			print("Account {} is a {}".format(inx, investments.accountType))
+			print("Account {} is a {}, with a balance of ${:,.2f}".format(inx, investments.accountType, investments.check_balance()))
