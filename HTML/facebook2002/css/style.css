@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Lovers+Quarrel);
+body
+{
+	background-color: #400000;
+}
+
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+h3
+{
+
+}
+
+h4
+{
+
+}
+
+p
+{
+
+}
+
+IMG.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+blockquote
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 14em;
+}
+
+p.clear
+{
+clear:both;
+}
+
+#wrapper
+{
+	font-family:'Lovers Quarrel', cursive;"Comic Sans MS", "Comic Sans", cursive;
+	font-size: 2em;
+	width: 80%;
+	padding: 2%;
+    border-style: solid;
+    border-width: medium;
+	border-color: ffd700;
+	margin: 0 auto;
+	color: 500020;
+	text-shadow: -1px 1px 2px #ffffff;
+	background-color: D0A669;
+}
