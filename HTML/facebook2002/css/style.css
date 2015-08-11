@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Lovers+Quarrel);
 body
 {
 	background-color: #400000;
+	margin: -3% 0;
 }
 
 h1
@@ -31,6 +31,7 @@ p
 
 IMG.displayed 
 {
+	opacity: 0.2;
     display: block;
     margin-left: auto;
     margin-right: auto 
@@ -41,7 +42,7 @@ blockquote
 	margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: 10em;
+    width: 18em;
     text-align: center;
 }
 
@@ -52,17 +53,17 @@ clear:both;
 
 #wrapper
 {
-	font-family:'Lovers Quarrel', cursive;"Comic Sans MS", "Comic Sans", cursive;
-	font-size: 2em;
+	font-family: Helvetica, cursive;"Comic Sans MS", "Comic Sans", cursive;
+	font-size: 1em;
 	width: 80%;
 	padding: 5%;
-    border-style: ridge;
-    border-width: medium;
-    border-radius: 25% 25%;
+    border-style: groove ridge ridge groove;
+    border-width: thick;
+    border-radius: 25%;
 	border-color: #B29600;
 	box-shadow: 0 0 2em 1em black;
 	margin: 0 auto;
 	color: 500020;
-	text-shadow: -1px 1px 2px #ffffff;
+	text-shadow: -1px 1px 1px #400000;
 	background-color: D0A669;
 }
