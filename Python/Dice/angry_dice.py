@@ -1,9 +1,9 @@
-# Define a die class
+# Create and run a game of angry dice
 from dieClass import Die
 
-
+#Create an Angry Dice object
 class Angry_Dice:
-	"""Set up angry dice"""
+	#Set up a game, taking no parameters
 	def __init__(self,):
 		# Declare a master list of die values
 		self.masterlist = ["1","2","ANGRY","4","5","6"]
@@ -16,8 +16,8 @@ class Angry_Dice:
 		self.invalidFlagA = False
 		self.invalidFlagB = False
 
+	#Roll the angry dice
 	def roll_the_dice(self, rollString):
-		"""Roll the angry dice"""
 		returnString = ""
 		# if A in string, roll the A die.
 		if 'a' in rollString.lower():
@@ -34,12 +34,12 @@ class Angry_Dice:
 		#return the returnString
 		return returnString
 
+	#Print round status
 	def print_round(self):
-		"""Print round status"""
 		print("You rolled:\n   a =[ {} ]\n   b =[ {} ]\n".format(self.angryDieA.__repr__(),self.angryDieB.__repr__()))
 
+	#Check and advance through stages
 	def stage_check(self):
-		"""Check and advance through stages"""
 		# get the current dice values into a string
 		currentValues = self.angryDieA.__repr__() + self.angryDieB.__repr__()
 		# if two angrys, recent to stage one
@@ -62,8 +62,8 @@ class Angry_Dice:
 		#print current stage
 		print("You are in Stage {}".format(str(self.currentStage)))
 
+	#Make sure only valid dice are held
 	def valid_check(self):
-		"""Make sure only valid dice are held"""
 		if self.currentStage == 1:
 			if self.angryDieA.__repr__() not in '1' and self.angryDieA.__repr__() not in '2':
 				self.invalidFlagA = True
@@ -80,13 +80,12 @@ class Angry_Dice:
 			if self.angryDieB.__repr__() not in '5':
 				self.invalidFlagB = True
 
-
+	#Play the game
 	def play(self):
-		"""Play the game"""
 		#set the roll string to roll both dice
 		rollString = 'ab'
 		#Great the player
-		input("Welcome to Angry Dice! Roll the two dice until you get thru the 3 Stages!\nStage 1 you need to roll 1 & 2\nStage 2 you need to roll ANGRY & 4\nStage 3 you need to roll 5 & 6\nYou can lock a die needed for your current stage and just roll the other one, but beware!\nIf you ever get 2 ANGRY's at once, you have to restart to Stage 1!\nAlso, you can never lock a 6! That's cheating!\nTo roll the dice, simply input the name of the die you want to roll.\nTheir names are a and b.\n To roll the dice, simply input the name of the die you want to roll.\nTheir names are a and b.\n\nPress ENTER to start.\n")
+		input("Welcome to Angry Dice! Roll the two dice until you get thru the 3 Stages!\nStage 1 you need to roll 1 & 2\nStage 2 you need to roll ANGRY & 4\nStage 3 you need to roll 5 & 6\nYou can lock a die needed for your current stage and just roll the other one, but beware!\nIf you ever get 2 ANGRY's at once, you have to restart to Stage 1!\nAlso, you can never lock a 6! That's cheating!\nTo roll the dice, simply input the name of the die you want to roll.\nTheir names are a and b.\nTo roll the dice, simply input the name of the die you want to roll.\nTheir names are a and b.\n\nPress ENTER to start.\n")
 		#Roll the dice
 		self.roll_the_dice(rollString)
 		#Enter body of game
