@@ -4,30 +4,7 @@ body
 	margin: -3% 0;
 }
 
-h1
-{
 
-}
-
-h2
-{
-
-}
-
-h3
-{
-
-}
-
-h4
-{
-
-}
-
-p
-{
-
-}
 
 IMG.displayed 
 {
@@ -51,7 +28,32 @@ p.clear
 clear:both;
 }
 
-#wrapper
+nav
+{
+
+	position: fixed;
+	left:50%;
+	top: 0;
+	width: 40%;
+	margin-left: -20%;
+}
+nav ul li
+{
+	display: inline-block;
+	padding: 1em 1em 1em 0.5em;
+	border-left: 1em solid #600;
+	border-right: 1em solid #FC878A;
+	background-color: #A20D0F;
+	color: #FFF;
+	text-decoration: none;
+	width: auto;
+	margin-top: -1em;
+	margin-right: -.5em;
+	margin-left:  0;
+	opacity: 0.8;
+}
+
+div.wrapper
 {
 	font-family: Helvetica, cursive;"Comic Sans MS", "Comic Sans", cursive;
 	font-size: 1em;
@@ -63,7 +65,27 @@ clear:both;
 	border-color: #B29600;
 	box-shadow: 0 0 2em 1em black;
 	margin: 0 auto;
-	color: 500020;
+	color: #500020;
 	text-shadow: -1px 1px 1px #400000;
 	background-color: D0A669;
+}
+
+li
+{
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+ul > ul > li:nth-child(odd) 
+{
+    color: #000;
+    font-variant: normal;
+    font-style: normal;
+}
+
+ul > ul > li:nth-child(even) 
+{
+    color: #725600;
+    font-variant: normal;
+    font-style: normal;
 }
