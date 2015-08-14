@@ -1,9 +1,8 @@
 body
 {
 	background-color: #400000;
-	margin: -3% 0;
+	margin: 0;
 }
-
 
 
 IMG.displayed 
@@ -32,25 +31,59 @@ nav
 {
 
 	position: fixed;
-	left:50%;
-	top: 0;
-	width: 40%;
-	margin-left: -20%;
+	top: -1em;
+	width: 100%;
+	z-index: 10;
+	text-align: right;
 }
-nav ul li
+
+aside
+{
+	width: 30%;
+	display:inline-block;
+}
+
+nav ul
+{
+  list-style: none;
+}
+
+nav li
 {
 	display: inline-block;
-	padding: 1em 1em 1em 0.5em;
-	border-left: 1em solid #600;
-	border-right: 1em solid #FC878A;
+	padding: 0;
+	border: 0;
+	margin-left: -.5em;
+}
+
+nav li a
+{
+	padding: .5em 1em .5em 0.5em;
+	border-right: .5em solid #000;
+	border-bottom: .25em solid #000;
 	background-color: #A20D0F;
 	color: #FFF;
 	text-decoration: none;
 	width: auto;
-	margin-top: -1em;
-	margin-right: -.5em;
-	margin-left:  0;
+	margin: 0;
 	opacity: 0.8;
+}
+
+nav li a:hover
+{
+	border-right: .5em solid #fff;
+	border-bottom: .25em solid #fff;
+	background-color: #888;
+	color: #000;
+}
+.first
+{
+	border-left: .25em solid #fff;
+}
+
+.first:hover
+{
+	border-left: .25em solid #000;
 }
 
 div.wrapper
