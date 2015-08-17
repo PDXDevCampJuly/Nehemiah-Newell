@@ -29,11 +29,6 @@ clear:both;
 
 nav
 {
-
-	position: fixed;
-	top: -1em;
-	width: 100%;
-	z-index: 10;
 	text-align: right;
 }
 
@@ -100,7 +95,7 @@ div.wrapper
 	margin: 0 auto;
 	color: #500020;
 	text-shadow: -1px 1px 1px #400000;
-	background-color: D0A669;
+	background-color: #D0A669;
 }
 
 li
