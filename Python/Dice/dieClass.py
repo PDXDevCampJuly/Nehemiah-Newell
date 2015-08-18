@@ -10,6 +10,7 @@ class Die:
 
 	def roll_die(self):
 		self.currentValue = choice(self.possibleValues)
+		return self.currentValue
 
 	def __repr__(self):
 		return str(self.currentValue)
