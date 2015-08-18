@@ -37,6 +37,10 @@ class Angry_Dice:
         print("You rolled:\n   a =[ {} ]\n   b =[ {} ]\n"
               .format(self.angryDieA.__repr__(),self.angryDieB.__repr__()))
 
+    #print current stage
+    def print_stage(self):
+        print("You are in Stage {}".format(str(self.currentStage)))
+
     #Check and advance through stages
     def stage_check(self):
         # get the current dice values into a string
@@ -54,12 +58,11 @@ class Angry_Dice:
             if "ANGRY" in currentValues and "4" in currentValues:
                 self.currentStage = 3
         #else stage three logic
-        if self.currentStage == 3:
+        elif self.currentStage == 3:
             if "5" in currentValues and "6" in currentValues:
                 print("You'be won! Calm down!")
                 exit()
-        #print current stage
-        print("You are in Stage {}".format(str(self.currentStage)))
+
 
     #Make sure only valid dice are held
     def valid_check(self):
@@ -89,6 +92,8 @@ class Angry_Dice:
             self.print_round()
             #check the stage conditons to advance the game
             self.stage_check()
+            #prints what stage we're on
+            self.print_stage()
         else:
             #Tell them they are cheating
             if self.invalidFlagA == True and self.invalidFlagB == True:

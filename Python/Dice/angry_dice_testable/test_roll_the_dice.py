@@ -3,8 +3,8 @@ __author__ = 'Nehemiah'
 import unittest
 import angry_dice_testable
 
-class die_roll_test(unittest.TestCase):
-    """Test the functionality of the die class roll function"""
+class test_roll_the_dice(unittest.TestCase):
+    """Test the functionality of the angry dice roll the dice function"""
 
     def setUp(self):
         self.game = angry_dice_testable.Angry_Dice()
@@ -14,6 +14,7 @@ class die_roll_test(unittest.TestCase):
         print("Just ran: ")
         print(self._testMethodName)
         print()
+        del self.game
 
     def test_roll_A(self):
         """Can it roll A"""
