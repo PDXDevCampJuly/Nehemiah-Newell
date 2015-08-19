@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Python/Dice/angry_dice.py" description="not in" line="57" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db40a2cc-7065-4d6a-9886-ebd03687598d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Nehemiah-Newell.iml" afterPath="$PROJECT_DIR$/.idea/Nehemiah-Newell.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="db40a2cc-7065-4d6a-9886-ebd03687598d" name="Default" comment="" />
     <ignored path="Nehemiah-Newell.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -39,7 +35,7 @@
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittests_in_test_in_tokyo.coverage" NAME="Unittests in test_in_tokyo Coverage Results" MODIFIED="1440007503085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/king_of_tokyo" />
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittests_in_test_heal.coverage" NAME="Unittests in test_heal Coverage Results" MODIFIED="1440010528774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/king_of_tokyo" />
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittest_test_print_round_test_print_round.coverage" NAME="Unittest test_print_round.test_print_round Coverage Results" MODIFIED="1439937454527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Dice/angry_dice_testable" />
-    <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittests_in_test_attack.coverage" NAME="Unittests in test_attack Coverage Results" MODIFIED="1440011002784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/king_of_tokyo" />
+    <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittests_in_test_attack.coverage" NAME="Unittests in test_attack Coverage Results" MODIFIED="1440011424956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/king_of_tokyo" />
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$angry_dice.coverage" NAME="angry_dice Coverage Results" MODIFIED="1439844617602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Dice" />
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittest_test_can_play_test_game_can_advance.coverage" NAME="Unittest test_can_play.test_game_can_advance Coverage Results" MODIFIED="1439938728166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Dice/angry_dice_testable" />
     <SUITE FILE_PATH="coverage/Nehemiah-Newell$Unittests_in_test_die_roll.coverage" NAME="Unittests in test_die_roll Coverage Results" MODIFIED="1439843789446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python/Dice" />
@@ -62,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/Python/king_of_tokyo/Monster.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -119,8 +115,8 @@
       <file leaf-file-name="test_attack.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/king_of_tokyo/test_attack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68209875">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.26234567">
+              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding>
                 <element signature="e#25#40#0" expanded="true" />
               </folding>
@@ -728,7 +724,13 @@
       <option name="project" value="LOCAL" />
       <updated>1440011139594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed whitespace">
+      <created>1440011461649</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1440011461649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +799,8 @@
     <MESSAGE value="Trying to fix red line" />
     <MESSAGE value="Just cleaned code" />
     <MESSAGE value="Added partially finished Monster Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added partially finished Monster Class" />
+    <MESSAGE value="Fixed whitespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed whitespace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1130,15 +1133,15 @@
     <entry file="file://$PROJECT_DIR$/Python/king_of_tokyo/Monster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/king_of_tokyo/test_attack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68209875">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.26234567">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding>
             <element signature="e#25#40#0" expanded="true" />
           </folding>
