@@ -46,7 +46,7 @@ class Monster:
             self.health -= dmg
             if self.health <= 0:
                 self.status = "K.O.'d"
-                return self.health
+            return self.health
         except TypeError:
             return self.health
 
