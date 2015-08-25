@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Pricing</title>
+    <link rel="stylesheet" href="css/red_test.css" />
+</head>
+<body>
+    <main>
+        <h1>Materials for Sale</h1>
+
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Price</th>
+                    <th>In Stock</th>
+                </tr>
+            </thead>
+            <tbody id="inventory">
+                <tr>
+                    <td>Wood</td>
+                    <td>$15</td>
+                    <td id="woodStock" class="true">Yes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="addStock()">Add Stock</button>
+        <button onclick="removeStock()">Remove Stock</button>
+
+    </main>
+
+    <script>
+
+        function removeStock()
+        {
+            var woodStock = document.getElementById('woodStock');
+            woodStock.className = 'false';
+            woodStock.innerHTML = "No"
+        }
+
+        function addStock()
+        {
+            var woodStock = document.getElementById('woodStock');
+            woodStock.className = 'true';
+            woodStock.innerHTML = "yes"
+        }
+
+    </script>
+</body>
+</html>

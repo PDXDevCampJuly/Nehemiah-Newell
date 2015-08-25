@@ -1,0 +1,43 @@
+table
+{
+    padding: 0 5%;
+}
+
+body > p > table, body > table
+{
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a
+{
+    color: blueviolet;
+    font-style: normal;
+    background: cornsilk;
+}
+
+a:hover
+{
+    color: cornsilk;
+    font-style: normal;
+    background: blueviolet;
+}
+
+a:hover:after
+{
+   content:  "\2713 ";
+}
+
+a:visited
+{
+    color: black;
+}
+a:visited:after
+{
+   content:  "\2713 ";
+}
+table table
+{
+    display: inline-block;
+}
