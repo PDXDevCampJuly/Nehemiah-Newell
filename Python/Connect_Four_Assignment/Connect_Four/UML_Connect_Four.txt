@@ -1,0 +1,54 @@
+﻿UML Diagram
+Connect 4
+PDX Code Guild / August 2015
+John & Nehemiah
+
+
+Connect 4 Model
+
+
+Board: list[ ]
+current Player: int
+_____________________
+
+
+get Board: list [ list ]
+update Board (list [ list ])
+get current Player: int
+flip current Player: int
+
+
+
+
+Connect 4 Controller
+
+
+Connect 4 View
+Connect 4 Model
+_____________________________
+
+
+handoff Board: list [ list ] 
+play turn ( )
+check game status ( )
+switch player ( )
+close game ( )
+check move validity ( [ list ] ) : bool
+check play again ( )
+mask player ( int ) : str
+
+
+Connect 4 View
+
+
+_____________________________
+
+
+print Greeting ( )
+print Rules ( )
+print Board ( list [ list ] )
+prompt turn ( str )
+prompt play again ( )
+print win ( str )
+print tie ( )
+print goodbye ( )

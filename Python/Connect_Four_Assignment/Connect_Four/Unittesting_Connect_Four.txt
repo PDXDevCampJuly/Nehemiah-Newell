@@ -1,0 +1,110 @@
+﻿Test Plan
+Connect 4
+PDX Code Guild / August 2015
+John & Nehemiah
+
+
+
+
+get_board
+* Returns a list of lists
+
+
+update_board
+* pass nothing
+* pass invalid columns
+* pass invalid height
+* pass invalid value
+* pass valid board
+
+
+get_current_player
+* returns the current player
+
+
+flip_player
+* flips the current player
+* returns the current player
+
+
+reset_state
+* set player correctly
+* clear the board correctly
+
+
+handoff_board
+* returns the board
+
+
+play_turn
+* pass no move
+* pass invalid move 
+* pass valid move
+
+
+check_game_status
+* no win/ no tie
+* player horizontal win
+* player vertical win
+* player diagonal up win
+* player diagonal down win
+* player tie
+
+
+switch_player
+* player flip
+* return player        
+
+
+check_move_validity
+* pass invalid move 
+* pass valid move
+
+
+check_play_again
+* reset game
+* does not reset game
+
+
+reset_game
+* call prompt play_again
+* take bool
+
+
+mask_player
+* pass good player
+
+
+print_greeting
+* print correctly
+
+
+print_rules
+* print correctly
+
+
+print_board
+* pass no board
+* pass invalid board 
+* pass valid board
+* print correctly
+
+
+prompt_turn
+* test for correct prompt
+
+
+prompt_play_again
+* prompt correctly
+
+
+print_win
+* print correctly        
+
+
+print_tie
+* print correctly
+
+
+print_goodbye
+* print correctly
