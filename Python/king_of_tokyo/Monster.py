@@ -33,6 +33,7 @@ class Monster:
             print("I don't understand.")
 
     def heal(self, hp):
+        """Heals the monster up to ten health"""
         try:
             self.health += hp
             if self.health > 10:
@@ -53,4 +54,10 @@ class Monster:
 
     def score(self, success):
         """Monitors progress, checks for victory"""
-        pass
+        try:
+            self.victory_points += success
+            if self.victory_points >= 20:
+                self.status = "WINNING"
+            return self.victory_points
+        except TypeError:
+            return self.victory_points
