@@ -12,28 +12,25 @@
         <table width="100%">
             <thead>
                 <tr>
+                    <td><input type="checkbox" onclick="checkAll(this)" id="checkAllBox" /></td>
                     <th>Material</th>
                     <th>Price</th>
                     <th>In Stock</th>
                 </tr>
             </thead>
             <tbody id="inventory">
-                <tr>
-                    <td>Wood</td>
-                    <td>$15</td>
-                    <td id="woodStock" class="true">Yes</td>
-                </tr>
             </tbody>
             <tfoot>
                 <tr>
+                    <td></td>
                     <td>
-                        <input type="text" libel="Material" />
+                        <input type="text" value="" name="material" id="material" />
                     </td>
                     <td>
-
+                        <input type="text" value="" name="price" id="price" />
                     </td>
                     <td>
-
+                        <button onclick="addNewStock()">Add Button</button>
                     </td>
                 </tr>
             </tfoot>
@@ -44,22 +41,6 @@
 
     </main>
 
-    <script>
-
-        function removeStock()
-        {
-            var woodStock = document.getElementById('woodStock');
-            woodStock.className = 'false';
-            woodStock.innerHTML = "No"
-        }
-
-        function addStock()
-        {
-            var woodStock = document.getElementById('woodStock');
-            woodStock.className = 'true';
-            woodStock.innerHTML = "yes"
-        }
-
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
