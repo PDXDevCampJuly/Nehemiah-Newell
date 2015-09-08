@@ -1,0 +1,40 @@
+View Review:
+
+Most functions within the view file are well commented and perform one task.
+
+L27 print_board - Function is long and contains repeated elements. It would also be more convenient for the user if the columns were labeled 1 through 7. There are more efficient methods for printing the board. One method to reduce the amount of code would be by printing the board with a nested for loop:
+
+    final_board = "  1   2   3   4   5   6   7\n"
+    for row in range(5, -1, -1):
+        new_row = ""
+        for col in range(7):
+            new_row += "| {} ".format(board[col][row])
+        new_row += "|\n"
+        final_board += new_row
+    print(final_board[:-1])
+
+Model Review:
+
+L19 def update_board - Perhaps because of the logic involved in updating board, this function could be in the control file.
+
+L44 def flip_current_player - I like the efficiency in switching between players. It takes away from having to write certain conditionals.
+
+All functions in the model file are concise and well labeled. Nicely done.
+
+Control Review:
+
+L23 def play_turn - function is not well labeled. Because this function calls other functions within the model file, it is important to show how each line works. This function calls a bunch of functions to setup each play. It could be broken up into different functions that complete different tasks. One function could call the turn and board while the other completes the turn with the while loop.
+
+def mask_player - Though this function simply switches between red and black based on the player value, it should still be commented.
+
+L51 def check_game_status - function is very long and not very efficient. Not all win conditions need to be checked depending on the placement of the pieces. Perhaps make a separate function containing the win logic and call it in this function for each column placement.
+The number of checks can be reduced by checking a win pattern within the rows, columns and diagonals. This could be done by converting the list into a string and checking if a win pattern is present:
+    if "oooo" in row:
+        return true
+Because this function is lengthy, each if and for function should be labeled to clarify what each piece of logic validates.
+
+L198 def main - Main function is not labeled. Comments should reflect what was written in the flowchart and the order in which the program flows.
+
+Summary:
+
+Generally the code is well organized and labeled. Most of the functions complete the one task they are meant to do. While the division of code is clear, some of the individual functions could be refactored. The functions in the control file especially could be made more concise. The main function needs to have comments that allow the user to visualize the flow chart. I would also label the columns to allow the user to more easily choose where they would like to go. Other than some simplification issues, it looks good. You do a good job of catching errors in the board. Nicely done.

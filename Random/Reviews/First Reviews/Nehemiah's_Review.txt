@@ -1,0 +1,36 @@
+Model 
+
+line 4-6: No documentation in space set aside for documentation.
+
+line 76: As this is a non-standard way of finding out if something is of type number, you might want to comment this line.
+Alternative, you might just use the function is isnumeric http://www.tutorialspoint.com/python/string_isnumeric.htm . 
+This still leavews the case of someone inputing a fraction like 1.1, so you might want to check to find out the behavior
+in those cases.
+
+View
+
+line 8-9: Vestigial init, if you aren't planing on expanding on this later, you might simply delete these lines.
+
+line 16, 19: Functions with no doc strings. While it isn't key, docstings tie into auto-documentation tools, so even for limited
+functions like these they can be useful.
+
+line 35-39: While programers don't mind starting at zero, lots of people don't like it. You can offset by one simply by adding
+or subtracting one, to make it more user friendly.
+
+Controller
+
+line 14-40: Very little documentation of your logic. It's good to give each section a header, simply to make what your doing where
+clear, not just to other poeple, but to yourself in the future.
+
+line 20-23: You are reaching into other functions here. While this isn't a bad thing exactly, some think you should create functions
+that do that for you, so that your main function isn't directly interaction with other objects. Just to be clear, this isn't 'wrong'
+to do, and some poeople feel this is the correct way. It's just a fyi.
+
+line 20-23, 25-27, 29-33, 35-38: Each of these seem to be a self-contained logical block. You might spin some of these off
+into their own functions, so that less game logic is embeded into you main play function.
+
+
+
+
+
+Your overall program seems solid. My biggest worry is that you don't comment enough.
