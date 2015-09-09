@@ -23,13 +23,20 @@ $('#submit').on('click', function(e)
 );
 
 //get the posts from the server
-$.ajax({
-   url: "https://spreadsheets.google.com/feeds/list/1ntmcFZk4R0Owmez5eKc0bcu_PftAKwWyXDWTqmypPgI/default/public/values?alt=json-in-script",
-   data:{format: 'json'},
-   dataType: 'jsonp', 
-   type: 'GET',
-   success: function(callBack){buildPage(callBack.feed.entry)}
-});
+callUpPage()
+//refresh the page
+setInterval(callUpPage, 3000);
+
+//talk to the google server to get the page
+function callUpPage()
+{
+	$.ajax({
+	   url: "https://spreadsheets.google.com/feeds/list/1ntmcFZk4R0Owmez5eKc0bcu_PftAKwWyXDWTqmypPgI/default/public/values?alt=json-in-script",
+	   data:{format: 'json'},
+	   dataType: 'jsonp', 
+	   type: 'GET',
+	   success: function(callBack){buildPage(callBack.feed.entry)}})	
+}
 
 // use the posts to build a page.
 function buildPage(contents)
