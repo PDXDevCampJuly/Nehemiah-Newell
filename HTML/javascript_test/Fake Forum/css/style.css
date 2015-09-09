@@ -1,3 +1,7 @@
+*
+{
+	box-sizing:border-box;
+}
 body
 {
 	background-color: #ffffe0;
@@ -13,17 +17,32 @@ h1
 
 .post
 {
+	position:relative;
 	display: inine-block;	
 	width: 60%;
-	margin: 3em 3em 3em auto;
-	box-shadow: 10px 5px 5px black;
-	opacity: 0.75; 
+	margin: 3em 3em 3em auto; 
 	background: yellow; 
 	color: black;
 	border-radius: 12px;
-	border: 2px solid black;
-	padding: .25em;  
+	border: 3px solid black;
+	padding: .25em;
+	z-index:1;
 } 
+
+.post:before
+{
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-transform: skew(-40deg);
+	-moz-transform: skew(-40deg);
+	-o-transform: skew(-40deg);
+	box-shadow: -.5em -3em 1em gray;
+	content: " ";
+	width: 90%;
+	height: 2.5em;
+	z-index: -1;
+}
 
 form
 {
