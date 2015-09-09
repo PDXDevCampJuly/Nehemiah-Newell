@@ -1,0 +1,42 @@
+body
+{
+	background-color: #ffffe0;
+}
+
+h1
+{
+	text-align: right;
+	margin-right: 5em;
+	margin-left: 1em;
+	box-shadow: -10px -5px 5px yellow;
+}
+
+.post
+{
+	display: inine-block;	
+	width: 60%;
+	margin: 3em 3em 3em auto;
+	box-shadow: 10px 5px 5px black;
+	opacity: 0.75; 
+	background: yellow; 
+	color: black;
+	border-radius: 12px;
+	border: 2px solid black;
+	padding: .25em;  
+} 
+
+form
+{
+	display: inine-block;	
+	width: 40%;
+	margin: 3em 0 3em auto;
+	text-align: center
+	box-shadow: 10px 5px 5px black;
+	opacity: 0.75; 
+	background: darkblue; 
+	color: white;
+	border-radius: 12px;
+	border: 2px solid black;
+	padding: .25em;  
+	
+}
