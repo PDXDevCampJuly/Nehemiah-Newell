@@ -27,7 +27,7 @@ $('#submit').on('click', function()
 //get the posts from the server
 callUpPage()
 //refresh the page
-setInterval(callUpPage, 3000);
+setInterval(callUpPage, 10000);
 
 //talk to the google server to get the page
 function callUpPage()
