@@ -7,7 +7,7 @@ var postTitle = document.getElementById('postTitle');
 var $postBody = document.getElementById('postBody');
 
 //tie a listener to the button
-$('#submit').on('click', function(e)
+$('#submit').on('click', function()
 {
  	//send the post to the server
 	$.ajax({
