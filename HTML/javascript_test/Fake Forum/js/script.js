@@ -18,7 +18,9 @@ $('#submit').on('click', function()
 	// These don't do much, but if I take them out the code stops working.
     success: console.log("Sent"),
     failure: console.log("failed")
-}); 
+	}); 
+	postTitle.value = "";
+	postBody.value = "";
 }
 );
 
@@ -45,7 +47,7 @@ function buildPage(contents)
 	for(var i = 0; i < contents.length; i++)
 	{
 		//build a page.
-		pageContents += "<div class= 'post'><h2>" + contents[i].gsx$posttitle.$t + " made on " + contents[i].gsx$timestamp.$t + "</h2><p>" + contents[i].gsx$postbody.$t + "</p></div>";
+		pageContents += "<div class= 'post'><h2>" + contents[i].gsx$posttitle.$t + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Made on " + contents[i].gsx$timestamp.$t + "</h2><p>" + contents[i].gsx$postbody.$t + "</p></div>";
 	}
 	//now load it.
 	$(".mainContent").html(pageContents);
