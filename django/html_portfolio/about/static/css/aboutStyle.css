@@ -1,0 +1,119 @@
+body
+{
+	background-color: #400000;
+	margin: 0;
+}
+
+
+IMG.displayed 
+{
+	opacity: 0.2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+blockquote
+{
+	margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+    text-align: center;
+}
+
+p.clear
+{
+clear:both;
+}
+
+nav
+{
+	text-align: right;
+}
+
+aside
+{
+	width: 30%;
+	display:inline-block;
+}
+
+nav ul
+{
+  list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	padding: 0;
+	border: 0;
+	margin-left: -.5em;
+}
+
+nav li a
+{
+	padding: .5em 1em .5em 0.5em;
+	border-right: .5em solid #000;
+	border-bottom: .25em solid #000;
+	background-color: #A20D0F;
+	color: #FFF;
+	text-decoration: none;
+	width: auto;
+	margin: 0;
+	opacity: 0.8;
+}
+
+nav li a:hover
+{
+	border-right: .5em solid #fff;
+	border-bottom: .25em solid #fff;
+	background-color: #888;
+	color: #000;
+}
+.first
+{
+	border-left: .25em solid #fff;
+}
+
+.first:hover
+{
+	border-left: .25em solid #000;
+}
+
+div.wrapper
+{
+	font-family: Helvetica, cursive;"Comic Sans MS", "Comic Sans", cursive;
+	font-size: 1em;
+	width: 80%;
+	padding: 5%;
+    border-style: groove ridge ridge groove;
+    border-width: thick;
+    border-radius: 25%;
+	border-color: #B29600;
+	box-shadow: 0 0 2em 1em black;
+	margin: 0 auto;
+	color: #500020;
+	text-shadow: -1px 1px 1px #400000;
+	background-color: #D0A669;
+}
+
+li
+{
+	font-variant: small-caps;
+	font-style: italic;
+}
+
+ul > ul > li:nth-child(odd) 
+{
+    color: #000;
+    font-variant: normal;
+    font-style: normal;
+}
+
+ul > ul > li:nth-child(even) 
+{
+    color: #725600;
+    font-variant: normal;
+    font-style: normal;
+}

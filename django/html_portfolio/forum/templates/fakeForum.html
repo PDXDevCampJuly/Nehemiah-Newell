@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake Forum</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+</head>
+<body>
+    <main>
+        <h1>Fake Forum</h1>
+		<div class="mainContent"></div>
+        <form id="submitReply">
+			<div class="col">
+            <label for="Post Title">Title</label>
+            <input id="postTitle" type="text" name="Post Title" placeholder="title" required/>
+			</div>
+			<div class="col">
+            <label for="Post Body">Post</label>
+            <input id="postBody" type="textarea" name="Post Body" placeholder="content" required/>
+			</div>
+            <input type="button" name="submit" id="submit" value="Submit"/>
+			</form>
+
+    </main>
+	
+	<script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/script.js" %}"></script>
+</body>
+</html>
