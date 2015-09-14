@@ -1,0 +1,30 @@
+Fake Review
+---------------------------------------------------
+
+style.css:
+
+Style sheet accomplishes design without calling on too many tags and classes. This simplicity allows for easier readability.
+
+L21 display: inine-block - spelling error. inline-block will not function as intended.
+
+L32 .post:before - interesting use of absolute and skew effects to create a shadow.
+
+fakeForum.html:
+
+Html looks fine.
+
+script.js:
+
+code is well commented and very concise.
+
+L10 $('#submit').on('click', function(e) - Your code works without the event object being passed into the function. Because you declare and set the value of postBody and postTitle, you may not need it.
+
+L48 - I like the way you concatenated the title with the post date to make clean looking text bubbles.
+
+Summary:
+
+Overall the code is very readable and well labeled. My main criticism is the position of the input. To submit content, the user has to scroll down to the bottom of the page, every time it's loaded.
+
+The content input should also be more readable. You use placeholders in html to label each input box which is a nice feature, but an actual label would make the input more clear. The submission button is also not aligned with the post label making it more difficult to know where to submit.
+
+The use of jquery in you script makes your code very easy to read. Overall, nice job.
