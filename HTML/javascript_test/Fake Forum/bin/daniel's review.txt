@@ -1,0 +1,13 @@
+Review #2:
+
+By changing the input information on one side and the posts on the other, the project has become more user friendly. There is no longer a need to scroll in order to post or view the most recent comment.
+
+CSS:
+
+The css has been cleaned up. The display now contains the type without any nonfunctioning code on the same line.
+
+L18 & L32 .post & .post:before - Good use of position relative and position absolut.
+
+Javascript:
+
+Corrections on script.js have been made. The code is ready to be submitted.
